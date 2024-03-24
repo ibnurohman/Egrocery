@@ -1,0 +1,19 @@
+[
+    {
+        "id": 1,
+        "firstName": "Bronya",
+        "lastName": "White",
+        "age": 22,
+        "gender": "Female",
+        "userId": 1
+    },
+    {
+        "id": 1,
+        "firstName": "Gepard",
+        "lastName": "Blue",
+        "age": 25,
+        "gender": "Male",
+        "userId": 2
+
+    }
+  ]

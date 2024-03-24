@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eGrocery - Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: grey;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        #content {
+            padding: 150px 0;
+            text-align: center;
+        }
+
+        a.button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: black;
+            color: white;
+            text-decoration: underline;
+            font-weight:bold;
+            border-radius: 25px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            padding: 0px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <%- include('_navbar.ejs') %>
+    <main>
+        <div id="content">
+            <h1>Home Page</h1>
+            <a href="/register" class="button">Register</a>
+            <a href="/login" class="button">Login</a>            
+        </div>
+    </main>
+    <%- include('_footer.ejs') %>
+
+</body>
+</html>

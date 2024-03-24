@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eGrocery - Orders</title>
+    <style>
+        header {
+            background-color: black;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <%- include('_navbar.ejs') %>
+    <br>
+    <h1>eGrocery</h1>
+    <br>
+    <br><br>
+    <section>
+        <div class="row">
+            <% orders.forEach(element => { %>
+            <% element.Products.forEach(innerElement => { %>
+            <div class="col-md-2">
+                <div class="card">
+                    <div class="picture"></div>
+                    <img src="<%= innerElement.picture %>" alt="">
+                    <div class="card-body">
+                        <div class="name">Name</div>
+                        <h5 class="card-title"><%= innerElement.name %></h5>
+                        <div class="description">Description</div>
+                        <p class="card-description"><%= innerElement.description %></p>
+                        <div class="price">Price</div>
+                        <p class="card-price"><%= Currency(innerElement.price) %></p>
+                    </div>
+                </div>
+            </div>
+            <% }) %>
+            <% }) %>
+            <button onclick="showAlert()">Buy</button>
+
+            <script>
+                function showAlert() {
+                    alert('Successfully buy item');
+                }
+            </script>
+        </div>
+    </section>
+    <%- include('_bootstrap') %>
+
+</body>
+</html>

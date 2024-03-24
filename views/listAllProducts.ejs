@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eGrocery - List All Product</title>
+    <style>
+        header {
+            background-color: black;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <%- include('_navbar.ejs') %>
+    <br>
+    <h1>eGrocery</h1>
+    <br>
+    <% if (currentSession.role === "seller") { %>
+        <a href="/products/Add" type="button" class="btn btn-warning" style="background-color: orange;color:white">Add Product</a>
+        <a href="/products/logout" class="btn btn-danger">Logout</a>
+    <% } %>
+    <% if (currentSession.role === "buyer") { %>
+        <a href="/order" type="button" class="btn btn-warning" style="background-color: orange;color:white">Order</a>
+        <a href="/products/logout" class="btn btn-danger">Logout</a>
+    <% } %>
+    </form>
+    <div class="search">
+    <form action="/products" method="get">
+    <div class="d-flex align-items-center" role="search">
+    <input class="form-control me-2" type="search" placeholder="Search by name" aria-label="Search" name="name">
+    <button class="btn btn-outline-success" type="submit">Search</button>
+    </div>
+    
+    <br><br>
+    <section>
+        <div class="row">
+            <% productsData.forEach(element => { %>
+            <div class="col-md-2">
+                <div class="card">
+                    <div class="picture"></div>
+                    <img src="<%= element.picture %>" alt="">
+                    <div class="card-body">
+                        <div class="name">Name</div>
+                        <h5 class="card-title"><%= element.name %></h5>
+                        <div class="description">Description</div>
+                        <p class="card-description"><%= element.description %></p>
+                        <div class="price">Price</div>
+                        <p class="card-price"><%= element.priceFormat %></p>
+                        <% if (currentSession.role === "seller") { %>
+                            <a href="/products/edit/<%= element.id %>" class="btn bg-white text-warning border border-warning">Edit</a>
+                            <a href="/products/delete/<%= element.id %>" class="btn btn-danger">Delete</a>
+                        <% } %>
+                        <% if (currentSession.role === "buyer") { %>
+                            <a href="/order/<%= element.id %>" type="button" class="btn btn-warning" style="background-color: orange;color:white">Buy</a>
+                            <!-- <a href="/products/logout" type="button" class="btn btn-warning" style="background-color: orange;color:white">Logout</a> -->
+                        <% } %>
+                        
+                    </div>
+                </div>
+            </div>
+            <% }) %>
+        </div>
+    </section>
+    <%- include('_bootstrap') %>
+
+</body>
+</html>

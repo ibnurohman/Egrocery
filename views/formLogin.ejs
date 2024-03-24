@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>eGrocery - Login</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: grey;
+      }
+
+      header {
+        background-color: black;
+        color: white;
+        padding: 25px;
+        text-align: center;
+      }
+
+      form {
+        max-width:none;
+        background-color: grey;
+        padding: 50px;
+        margin-bottom: 85px;
+      }
+
+      h1,
+      h2 {
+        text-align: center;
+      }
+
+      label {
+        display: inline-block;
+        margin-bottom: 10px;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        background-color: whitesmoke;
+        border: 2px solid black;
+        border-radius: 5px;
+      }
+
+      textarea {
+        height: 250px;
+      }
+
+      button {
+        background-color: black;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+      }
+
+      footer {
+        background-color: black;
+        color: white;
+        padding: 0px;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <%- include('_navbar.ejs') %>
+    <form action="" method="post">
+      <h1>Login</h1>
+      <h2>Please fill the form below to Login</h2>
+      <label>Username</label> <br />
+      <input type="text" name="username"/>
+
+      <label>Password</label> <br />
+      <input type="text" name="password"/>
+
+      <button type="submit">Login</button>
+    </form>
+
+    <%- include('_footer.ejs') %>
+  </body>
+</html>

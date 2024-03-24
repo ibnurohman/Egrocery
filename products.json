@@ -1,0 +1,73 @@
+[
+  {
+    "id": 1,
+    "name": "Sunlight",
+    "description": "Sabun",
+    "price": 12500,
+    "picture":"https://c.alfagift.id/product/1/1_A7639680001001_20230620134939160_base.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Lifebuoy",
+    "description": "Sabun",
+    "price": 18750,
+    "picture":"https://assets.unileversolutions.com/v1/99021595.png?im=AspectCrop=(540,540);Resize=(540,540)"
+
+  },
+  {
+    "id": 3,
+    "name": "Rinso",
+    "description": "Detergent",
+    "price": 28500,
+    "picture":"https://compassfresh.com/cdn/shop/products/rinso_rinso-molto-1-8kg_full02_1_900x900.jpg?v=1587533455"
+  },
+  {
+    "id": 4,
+    "name": "Attack",
+    "description": "Detergent",
+    "price": 25000,
+    "picture":"https://images.tokopedia.net/img/cache/900/product-1/2018/8/1/32659899/32659899_219e5a27-202c-4f93-9937-ab08a9cdcc7d_800_1100.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Chitato",
+    "description": "Snack",
+    "price": 12000,
+    "picture":"https://rm.id/images/berita/750x390/peminatnya-tinggi-indofood-hadirkan-lagi-chitato-rasa-mi-goreng_133009.jpeg"
+  },
+  {
+    "id": 6,
+    "name": "Chiki",
+    "description": "Snack",
+    "price": 10000,
+    "picture":"https://arti-assets.sgp1.digitaloceanspaces.com/megaswalayan/products/1c25c484-49c6-40ac-9e37-515c1723fc4b.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Sampoerna",
+    "description": "Cigarette",
+    "price": 33900,
+    "picture":"https://kpri.princetech.id/web/image/product.product/23774/image_1024/%5B8999909096004%5D%20Rokok%20Sampoerna%20mild%20merah%2016?unique=3500a56"
+  },
+  {
+    "id": 8,
+    "name": "Marlboro",
+    "description": "Cigarette",
+    "price": 36900,
+    "picture":"https://dit.indotaichen.com/olskop/assets/upload/gambar1639109341.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Indomie",
+    "description": "Noodle",
+    "price": 3900,
+    "picture":"https://o-cdf.sirclocdn.com/unsafe/cdnapi.sooplai.com/media/products/206840/NOOD-INDO-033A.png"
+  },
+  {
+    "id": 10,
+    "name": "Sarimie",
+    "description": "Noodle",
+    "price": 3750,
+    "picture":"https://assets.klikindomaret.com/products/10004327/10004327_1.jpg"
+  }
+]

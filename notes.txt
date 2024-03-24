@@ -1,0 +1,25 @@
+sequelize model:generate --name Product --attributes name:string,description:string,price:integer
+
+sequelize model:generate --name User --attributes username:string,email:string,password:string,role:string
+
+sequelize model:generate --name Profile --attributes firstName:string,lastName:string,age:integer,gender:string,userId:integer
+
+sequelize model:generate --name Order --attributes userId:integer,dateOfPurchase:date,totalPrice:integer,currency:string
+
+sequelize model:generate --name OrderProduct --attributes productId:integer,orderId:integer
+
+sequelize migration:generate --name add-column-age-to-table-product
+
+npx sequelize seed:generate --name products
+
+npx sequelize seed:generate --name users
+
+npx sequelize seed:generate --name profiles
+
+npx sequelize seed:generate --name orders
+
+npx sequelize seed:generate --name orderproducts
+
+
+
+
